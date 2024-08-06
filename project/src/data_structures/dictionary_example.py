@@ -33,3 +33,25 @@ for key, value in student.items():
 
     #help(student)
 
+
+# Sample dictionary
+my_dict = {'apple': 5, 'banana': 2, 'orange': 3, 'grape': 4}
+
+# Sorting the dictionary by value
+sorted_dict = dict(sorted(my_dict.items(), key=lambda item: item[1]))
+
+print(sorted_dict)
+
+# Sorting the dictionary by value
+sorted_dict = dict(sorted(my_dict.items(), key=lambda item: item[0]))
+
+print(sorted_dict)
+
+# Original dictionary
+my_dict = {'apple': 5, 'banana': 2, 'orange': 3, 'grape': 4, 'kiwi': 2,'apple':1}
+
+# Sorting by value first and then by key
+sorted_dict = dict(sorted(my_dict.items(), key=lambda item: (item[0], item[1])))
+
+# Display the sorted dictionary
+print(sorted_dict)
